@@ -1,0 +1,465 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background: #0d0d0d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  background: transparent;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.journey-button {
+  color: #00bfff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background-image: url('water.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin-bottom: 40px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(45deg, #00bfff, #1e90ff);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-button:active {
+  transform: scale(0.98);
+}
+
+/* Service Section */
+.service-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #0d0d0d;
+}
+
+.service-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service-card h2 {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1em;
+  color: #dcdcdc;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure the links inside service cards behave correctly */
+.service-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-card a:hover {
+  color: #4CAF50; /* Adds color change effect when hovering over the link */
+}
+
+/* Community Clean-Up Section */
+.community-cleanup {
+  text-align: center;
+  padding: 60px 40px;
+  background: #1c1c1c;
+}
+
+.community-cleanup h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+.community-cleanup p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #dddddd;
+}
+
+.join-button {
+  color: #ffffff;
+  background-color: #00bfff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/* Project Team Section */
+.project-team {
+  padding: 60px 40px;
+  text-align: center;
+  background: #0d0d0d;
+}
+
+.project-team h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #00bfff;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 200px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.team-member p {
+  font-size: 1em;
+  color: #cccccc;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #1c1c1c;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5em;
+  color: #00bfff;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  color: #dddddd;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Why Water Availability Matters Section */
+.why-water-section {
+  padding: 60px 20px;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  text-align: center;
+}
+
+.why-water-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+.why-water-section p {
+  font-size: 1.2em;
+  color: #dcdcdc;
+  margin-bottom: 20px;
+}
+
+/* Water Availability by Region Section */
+.regions-section {
+  padding: 60px 20px;
+  background-color: #1c1c1c;
+  text-align: center;
+}
+
+.regions-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #00bfff;
+}
+
+.regions-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+
+.region-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.region-card h3 {
+  font-size: 1.8em;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.region-card p {
+  font-size: 1.1em;
+  color: #dcdcdc;
+  margin-bottom: 15px;
+}
+
+.region-card a {
+  font-size: 1.1em;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #00bfff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.region-card a:hover {
+  background-color: #1e90ff;
+}
+
+.region-card:hover {
+  transform: scale(1.05);
+}
+
+/* Header for Region Pages */
+header {
+  background-color: #00bfff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section for Region Overview */
+.region-overview {
+  background-color: #ffffff;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.region-overview h2 {
+  font-size: 2.2em;
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.region-overview p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Section for Water Sources */
+.water-sources,
+.challenges,
+.conservation {
+  background-color: #ffffff;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.water-sources h2,
+.challenges h2,
+.conservation h2 {
+  font-size: 2.2em;
+  color: #00bfff;
+  margin-bottom: 15px;
+}
+
+.water-sources ul,
+.challenges ul,
+.conservation ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.water-sources li,
+.challenges li,
+.conservation li {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.water-sources li strong,
+.challenges li strong,
+.conservation li strong {
+  color: #333;
+}
+
+.water-sources li:hover,
+.challenges li:hover,
+.conservation li:hover {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Footer for Region Pages */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 40px;
+  font-size: 1em;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2em;
+  }
+
+  nav a {
+      font-size: 1em;
+      margin: 0 10px;
+  }
+
+  section {
+      padding: 20px;
+  }
+
+  section h2 {
+      font-size: 1.8em;
+  }
+
+  section p,
+  section ul li {
+      font-size: 1em;
+  }
+}
+
+
+
+

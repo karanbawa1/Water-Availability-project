@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background: #0d0d0d;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #00bfff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav li {
+    display: inline;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  /* Section Styles */
+  section {
+    background-color: #1c1c1c;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #dddddd;
+  }
+  
+  section h2 {
+    font-size: 2em;
+    color: #00bfff;
+    margin-bottom: 15px;
+  }
+  
+  section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  section ul li {
+    font-size: 1.1em;
+    color: #cccccc;
+    margin-bottom: 10px;
+  }
+  
+  section ul li::before {
+    content: "• ";
+    color: #00bfff;
+  }
+  
+  section ul li:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    nav a {
+      font-size: 1em;
+    }
+  
+    section {
+      padding: 20px;
+    }
+  
+    section h2 {
+      font-size: 1.8em;
+    }
+  
+    section ul li {
+      font-size: 1em;
+    }
+  }
+  
